@@ -39,5 +39,18 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/babel__core": "^7.20.5",
+    "@types/babel__generator": "^7.6.8",
+    "@types/babel__template": "^7.4.4",
+    "@types/bonjour": "^3.5.13",
+    "@types/express-serve-static-core": "^4.19.5",
+    "@types/graceful-fs": "^4.1.9",
+    "@types/html-minifier-terser": "^7.0.2",
+    "@types/http-proxy": "^1.17.14",
+    "@types/istanbul-lib-coverage": "^2.0.6",
+    "@types/istanbul-lib-report": "^3.0.3",
+    "@types/parse-json": "^4.0.2"
   }
 }
