@@ -4,7 +4,7 @@ import {Route, Routes} from "react-router-dom";
 
 
 
-export default function mainRoutes(){
+ function MainRoutes(){
 
 return(
     <Routes>
@@ -17,3 +17,5 @@ return(
 
 
 }
+
+export default MainRoutes
