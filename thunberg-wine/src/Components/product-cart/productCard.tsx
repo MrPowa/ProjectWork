@@ -1,7 +1,9 @@
 import { useState } from "react";
-import { Product } from "../Interfaces/productInterfaces";
-import RoundedButton from "./RoundedBotton";
-import { useCart } from "../context/CartContext";
+import { Product } from "../../Interfaces/productInterfaces";
+import RoundedButton from "../RoundedBotton";
+import { useCart } from "../../context/CartContext";
+import './product-cart.css';
+
 
 export function ProductCard({ product }: { product: Product }) {
     const [amount, setAmount] = useState(1);
@@ -9,14 +11,14 @@ export function ProductCard({ product }: { product: Product }) {
     
     return (
         <>
-            <div>
-                <div>
-                    <img src={product.image} alt={product.name} />
+            <div className="product-element">
+                <div className="product-gen">
+                    <img src={product.image} alt={product.name} width={product.width} height={product.height} />
                     <h3>{product.name}</h3>
                     <p>{product.price}</p>
                     <p>{product.description}</p>
                 </div>
-                <div>
+                <div className="product-button">
                     <RoundedButton
                      label="Add to Cart"
                      onclick={() => {
