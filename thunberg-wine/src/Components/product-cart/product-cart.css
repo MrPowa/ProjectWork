@@ -1,9 +1,38 @@
 .product-element{
+    padding: 5% 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     flex-grow: 1;
+    width: 33%;
+    justify-content: center !important; 
+}
+
+.product-gen {
+    display: flex;
+   
+    flex-direction: row;
+    align-items: center;
+    padding: 5%;
+    flex: 1;
+    border-radius: 40px;
+    box-shadow: 5px 5px 30px 5px rgba(149, 144, 144, 0.607);
+}
+
+.product-button {
+    display: flex;
+    padding: 5%;
+    justify-content: center;
     width: 100%;
+    
+}
+
+.product-button button{
+    border-radius: 40px;
+    color: white;
+    font-weight: 700;
+    background-color:rgb(154, 8, 8); ;
+    width: 60%;
 }
 
