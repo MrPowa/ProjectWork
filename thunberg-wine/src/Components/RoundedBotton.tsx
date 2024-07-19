@@ -2,12 +2,13 @@
 
 export interface RoundedButtonProps {
     icon?: string;
-    label: string;
+    label?: string;
+    label2?: string;
     onclick: () => void;
 }
 
 export default function RoundedButton(
-    {icon,  label, onclick }: RoundedButtonProps = {icon: "", label: "", onclick: () => {} }
+    {icon,  label, label2, onclick }: RoundedButtonProps = {icon: "", label: "", onclick: () => {} }
     
 ) {
     return(
@@ -18,6 +19,7 @@ export default function RoundedButton(
                 onclick();
             }}
         >
+        {label2 && <p>{label2}</p>}
         {icon && <img src={icon} alt="icon"/>}    
         {label && <p>{label}</p>}    
         </button>
