@@ -1,4 +1,4 @@
-import GridCard from "../Components/GiftCard";
+import GridCard from "../Components/ProductsCard/GiftCard";
 import {Route, Routes} from "react-router-dom";
 
 

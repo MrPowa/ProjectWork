@@ -1,0 +1,39 @@
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    background-color: rgb(106, 6, 6);
+    box-shadow: 5px 5px 40px 5px rgba(58, 57, 57, 0.595);
+}
+
+nav ul {
+    flex-grow: 1;
+    word-break: 40%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    height: 100%;
+}
+
+nav li {
+
+    padding: 2% 2%;
+    transition: all 0.5s;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    transition: all 0.5s;
+}
+
+nav li:hover {
+    background-color: white;
+}
+
+nav li:hover a {
+    color: rgb(106, 6, 6);
+}

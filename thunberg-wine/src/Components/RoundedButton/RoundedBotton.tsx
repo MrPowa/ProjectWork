@@ -1,4 +1,4 @@
-
+import './RoundedButton.css'
 
 export interface RoundedButtonProps {
     icon?: string;
@@ -8,20 +8,20 @@ export interface RoundedButtonProps {
 }
 
 export default function RoundedButton(
-    {icon,  label, label2, onclick }: RoundedButtonProps = {icon: "", label: "", onclick: () => {} }
-    
+    { icon, label, label2, onclick }: RoundedButtonProps = { icon: "", label: "", onclick: () => { } }
+
 ) {
-    return(
+    return (
         <button
-            style={{ borderRadius: "10px" }}
+            className="button-boh"
             onClick={(e) => {
                 e.preventDefault();
                 onclick();
             }}
         >
-        {label2 && <p>{label2}</p>}
-        {icon && <img src={icon} alt="icon"/>}    
-        {label && <p>{label}</p>}    
+            {label2 && <p>{label2}</p>}
+            {icon && <img src={icon} alt="icon" />}
+            {label && <p>{label}</p>}
         </button>
     );
 }
